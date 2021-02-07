@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/COMP6651--algorithm.iml" filepath="$PROJECT_DIR$/COMP6651--algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/programming_assignment/programming_assignment.iml" filepath="$PROJECT_DIR$/programming_assignment/programming_assignment.iml" />
     </modules>
   </component>
 </project>
