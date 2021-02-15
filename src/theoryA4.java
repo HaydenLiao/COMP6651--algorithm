@@ -1,9 +1,18 @@
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Scanner;
+/*
+Q1
 
-public class test {
+ */
+public class theoryA4 {
+    /*
+		Let opt denote the optimal solution, as well as the name of our memoization table
+		I. subproblem. opt(i) = "the number of robots killed on day i to maximize the total number of robots killed"
+		II. recurrence. OPT[i] = max{OPT[i-j] + Math.min(function[j], robots[i])}
+		III. answer to original question: all OPT[i] i.e. the number of robots killed each day;
+		IV. Base cases: opt(0) = 0.
+						for all i < 0, OPT(i) = 0, there are no negative days.
+		V. implementation: in our implementation, we initialized OPT(0)
+	*/
     public static int[] findRobotsKilled(int[] robots, int[] function) // method that decides when to shoot in order to maximize the number of killed robots
     {
         int[] OPT = new int[robots.length]; //OPT is a 1-D array where we save the number of robots killed each day
@@ -34,20 +43,8 @@ public class test {
         }
         for(int i=0; i<shootingDays.size() -1;i++)
         {
-            System.out.println(shootingDays.get(i)+1 + ", ");
+            System.out.print(shootingDays.get(i)+1 + ", ");
         }
-        System.out.println(shootingDays.get(shootingDays.size()-1)+1 + ".");
+        System.out.print(shootingDays.get(shootingDays.size()-1)+1 + ".");
     }
-
 }
-
-//
-//public class Pass{
-//    ...
-//    private Participant participant;
-//    private Event event;
-//    public Pass(Participant p, Event e){
-//        this.participant=p;
-//        this.event=e;
-//    }
-//}
